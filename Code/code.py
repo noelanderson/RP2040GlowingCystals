@@ -2,12 +2,14 @@ import alarm
 import board
 import digitalio
 import time
+from micropython import const
 
 from HallEffectSensor import HallEffectSensor
 from RotaryEncoder import RotaryEncoder
 from Leds import Leds
 
-
+##############################################
+# State machine class
 class SystemState:
     LOW_POWER = const(0)
     START_UP = const(1)
@@ -51,7 +53,14 @@ class SystemState:
 
 
 ##############################################
-# Set up Board
+# Set up Board (adafruit RP2040 Feather)
+#  D4    output - neopixel leds
+#  D11   input - rotary encoder A
+#  D10   input - rotary encoder B
+#  D12   input - rotary encoder switch 
+#  D24   input - moon Hall Effect sensor
+#  D25   input - sun Hall Effect sensor
+#
 if alarm.wake_alarm != None:
     if isinstance(alarm.wake_alarm, alarm.pin.PinAlarm):
         print("wake from deep sleep")
@@ -75,7 +84,6 @@ colour = Leds.WHITE
 
 ##############################################
 # Main Loop
-
 while True:
     # Run State Machine
     state.tick()
@@ -129,4 +137,3 @@ while True:
 
         # Exit the program, and then deep sleep until one of the controls is moved to create a PIN alarm.
         alarm.exit_and_deep_sleep_until_alarms(encoderPinAlarm, encoderAPinAlarm, encoderBPinAlarm, moonPinAlarm, pin_alarm_sun)
-
