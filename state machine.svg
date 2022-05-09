@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="st12" width="6.0024in" height="8.3819in" color-interpolation-filters="sRGB" version="1.1" viewBox="0 0 432.17 603.5" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink"><metadata><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/></cc:Work></rdf:RDF></metadata>
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#5b9bd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st2 {fill:#5b9ad4;font-family:Calibri;font-size:0.833336em}
+		.st3 {fill:#5b9bd5;stroke:#5b9bd5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st4 {marker-end:url(#mrkr4-11);stroke:#5592c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st5 {fill:#5592c9;fill-opacity:1;stroke:#5592c9;stroke-opacity:1;stroke-width:0.16556291390728}
+		.st6 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st7 {fill:#000000;font-family:Calibri;font-size:0.666664em}
+		.st8 {font-size:1em;text-decoration:underline}
+		.st9 {font-size:1em}
+		.st10 {fill:#4271c6}
+		.st11 {stroke:#4271c6;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st12 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="m2 1-2-1 2-1v2"/>
+		</g>
+		<marker id="mrkr4-11" class="st5" overflow="visible" orient="auto" refX="-12.08">
+			<use transform="scale(-6.04)" width="100%" height="100%" xlink:href="#lend4"/>
+		</marker>
+	</defs>
+	<g transform="translate(-99.765 -116.75)">
+		<title>Page-1</title>
+		<g transform="translate(221.62 -441)">
+			<title>Rounded Rectangle.8</title>
+			<desc>WHITE_PULSING</desc>
+			<path class="st1" d="m9 792h72a8.9998 8.9998-180 0 0 9-9v-36a8.9998 8.9998-180 0 0-9-9h-72a8.9998 8.9998-180 0 0-9 9v36a8.9998 8.9998-180 0 0 9 9z"/>
+			<text class="st2" x="10.98" y="768">WHITE_PULSING</text>		</g>
+		<g transform="translate(248.62 -639)">
+			<title>Initial state.9</title>
+			<circle class="st3" cx="18" cy="774" r="18"/>
+		</g>
+		<g transform="translate(313.12 -479.25)">
+			<title>Dynamic connector.10</title>
+			<desc>tick step brightness</desc>
+			<path class="st4" d="m-1.5 789.75h51.75v-36h-66.75v16.46"/>
+			<rect class="st6" x="24.641" y="744.15" width="49.718" height="19.2"/>
+			<text class="st7" x="43.73" y="751.34998"><tspan class="st8" text-decoration="underline" style="text-decoration-line:underline">tick</tspan> <tspan class="st9" x="24.639999" dy="1.2em">step brightness</tspan></text>		</g>
+		<g transform="translate(221.62 -553.5)">
+			<title>Rounded Rectangle.12</title>
+			<desc>START_UP</desc>
+			<path class="st1" d="m9 792h72a8.9998 8.9998-180 0 0 9-9v-36a8.9998 8.9998-180 0 0-9-9h-72a8.9998 8.9998-180 0 0-9 9v36a8.9998 8.9998-180 0 0 9 9z"/>
+			<text class="st2" x="23.940001" y="768">START_UP</text>		</g>
+		<g transform="translate(221.62 -319.5)">
+			<title>Rounded Rectangle.13</title>
+			<desc>RAINBOW_PULSING</desc>
+			<path class="st1" d="m9 792h72a8.9998 8.9998-180 0 0 9-9v-36a8.9998 8.9998-180 0 0-9-9h-72a8.9998 8.9998-180 0 0-9 9v36a8.9998 8.9998-180 0 0 9 9z"/>
+			<text class="st2" x="4.0999999" y="768">RAINBOW_PULSING</text>		</g>
+		<g transform="translate(390.38 -319.5)">
+			<title>Rounded Rectangle.14</title>
+			<desc>SELECTED_COLOUR PULSING</desc>
+			<path class="st1" d="m9 792h72a8.9998 8.9998-180 0 0 9-9v-36a8.9998 8.9998-180 0 0-9-9h-72a8.9998 8.9998-180 0 0-9 9v36a8.9998 8.9998-180 0 0 9 9z"/>
+			<text class="st2" x="5.3000002" y="762">SELECTED_COLOUR <tspan class="st9" x="27.17" dy="1.2em">PULSING</tspan></text>		</g>
+		<g transform="translate(221.62 -157.5)">
+			<title>Rounded Rectangle.18</title>
+			<desc>LOW_POWER</desc>
+			<path class="st1" d="m9 792h72a8.9998 8.9998-180 0 0 9-9v-36a8.9998 8.9998-180 0 0-9-9h-72a8.9998 8.9998-180 0 0-9 9v36a8.9998 8.9998-180 0 0 9 9z"/>
+			<text class="st2" x="17.15" y="768">LOW_POWER</text>		</g>
+		<g transform="translate(313.12 -357.75)">
+			<title>Dynamic connector.19</title>
+			<desc>tick Step brightness</desc>
+			<path class="st4" d="m-1.5 789.75h29.25v-49.5h-44.25v29.96"/>
+			<rect class="st6" x="1.8678" y="730.65" width="50.265" height="19.2"/>
+			<text class="st7" x="21.23" y="737.84998"><tspan class="st8" text-decoration="underline" style="text-decoration-line:underline">tick</tspan> <tspan class="st9" x="1.87" dy="1.2em">Step brightness</tspan></text>		</g>
+		<g transform="translate(481.88 -357.75)">
+			<title>Dynamic connector.20</title>
+			<desc>tick step brightness</desc>
+			<path class="st4" d="m-1.5 789.75h27v-49.5h-42v29.96"/>
+			<rect class="st6" x="-.10879" y="730.65" width="49.718" height="19.2"/>
+			<text class="st7" x="18.98" y="737.84998"><tspan class="st8" text-decoration="underline" style="text-decoration-line:underline">tick</tspan> <tspan class="st9" x="-0.11" dy="1.2em">step brightness</tspan></text>		</g>
+		<g transform="translate(257.62 -639)">
+			<title>Dynamic connector</title>
+			<path class="st4" d="m9 792v25.46"/>
+		</g>
+		<g transform="translate(257.62 -441)">
+			<title>Dynamic connector.22</title>
+			<desc>sun sensor aligned</desc>
+			<path class="st4" d="m9 792v61.46"/>
+			<rect class="st6" x="-8.3963" y="816.15" width="34.793" height="19.2"/>
+			<text class="st7" x="-8.3999996" y="823.34998">sun sensor <tspan class="st9" x="-2.8299999" dy="1.2em">aligned</tspan></text>		</g>
+		<g transform="translate(311.62 -337.5)">
+			<title>Dynamic connector.23</title>
+			<desc>encoder button clicked</desc>
+			<path class="st4" d="m0 783h72.71"/>
+			<rect class="st6" x="13.998" y="773.4" width="50.753" height="19.2"/>
+			<text class="st7" x="14" y="780.59998">encoder button <tspan class="st9" x="28.25" dy="1.2em">clicked</tspan></text>		</g>
+		<g transform="translate(257.62 -553.5)">
+			<title>Dynamic connector.25</title>
+			<desc>moon sensor aligned</desc>
+			<path class="st4" d="m9 792v52.46"/>
+			<rect class="st6" x="-12.144" y="811.65" width="42.289" height="19.2"/>
+			<text class="st7" x="-12.14" y="818.84998">moon sensor <tspan class="st9" x="-2.8299999" dy="1.2em">aligned</tspan></text>		</g>
+		<g transform="translate(481.88 -335.25)">
+			<title>Dynamic connector.27</title>
+			<desc>encoder turned change colour</desc>
+			<path class="st4" d="m-1.5 794.25h27v49.5h-42v-29.96"/>
+			<rect class="st6" x="-.56198" y="834.15" width="50.624" height="19.2"/>
+			<text class="st7" x="-0.56" y="841.34998"><tspan class="st8" text-decoration="underline" style="text-decoration-line:underline">encoder turned</tspan> <tspan class="st9" x="1.84" dy="1.2em">change colour </tspan></text>		</g>
+		<g transform="translate(220.12 -335.25)">
+			<title>Dynamic connector.28</title>
+			<desc>tenth tick step colour</desc>
+			<path class="st4" d="m1.5 794.25h-26.44v49.5h41.44v-29.96"/>
+			<rect class="st6" x="-42.412" y="834.15" width="36.449" height="19.2"/>
+			<text class="st7" x="-39.73" y="841.34998"><tspan class="st8" text-decoration="underline" style="text-decoration-line:underline">tenth tick</tspan> <tspan class="st9" x="-42.41" dy="1.2em">step colour</tspan></text>		</g>
+		<g transform="translate(405.38 -310.5)">
+			<title>Dynamic connector.29</title>
+			<desc>encoder button clicked</desc>
+			<path class="st4" d="m0 783v34.87h-108.75v-28.83"/>
+			<rect class="st6" x="-79.752" y="808.28" width="50.753" height="19.2"/>
+			<text class="st7" x="-79.75" y="815.47998">encoder button <tspan class="st9" x="-65.5" dy="1.2em">clicked</tspan></text>		</g>
+		<g transform="translate(435.38 -319.5)">
+			<title>Dynamic connector.31</title>
+			<desc>timeout or moon not aligned</desc>
+			<path class="st4" d="m0 792v135h-117.71"/>
+			<rect class="st6" x="-29.607" y="875.16" width="59.214" height="28.8"/>
+			<text class="st7" x="-12.99" y="882.35999">timeout  <tspan class="st9" x="-3.5" dy="1.2em">or </tspan><tspan class="st9" x="-29.610001" dy="1.2em"> </tspan>moon not aligned</text>		</g>
+		<g transform="translate(257.62 -319.5)">
+			<title>Dynamic connector.32</title>
+			<desc>timeout or moon not aligned</desc>
+			<path class="st4" d="m9 792v101.96"/>
+			<rect class="st6" x="-21.732" y="845.1" width="59.214" height="28.8"/>
+			<text class="st7" x="-5.1199999" y="852.29999">timeout  <tspan class="st9" x="4.3699999" dy="1.2em">or </tspan><tspan class="st9" x="-21.73" dy="1.2em"> </tspan>moon not aligned</text>		</g>
+		<g transform="translate(212.62 -468)">
+			<title>Dynamic connector.33</title>
+			<desc>timeout or moon not aligned</desc>
+			<path class="st4" d="m9 792h-92.25v283.5h86.21"/>
+			<rect class="st6" x="-112.86" y="846.47" width="59.214" height="28.8"/>
+			<text class="st7" x="-96.239998" y="853.65997">timeout  <tspan class="st9" x="-86.75" dy="1.2em">or </tspan><tspan class="st9" x="-112.86" dy="1.2em"> </tspan>moon not aligned</text>		</g>
+		<g transform="translate(248.62 -72)">
+			<title>Final state</title>
+			<path class="st10" d="m32.4 774a14.4 14.4-180 1 0-28.8 0 14.4 14.4-180 1 0 28.8 0z"/>
+			<path class="st11" d="m36 774a18 18-180 1 0-36 0 18 18-180 1 0 36 0"/>
+			<path class="st11" d="m32.4 774a14.4 14.4-180 1 0-28.8 0 14.4 14.4-180 1 0 28.8 0"/>
+		</g>
+		<g transform="translate(257.62 -157.5)">
+			<title>Dynamic connector.35</title>
+			<desc>control moved wakeup &amp; restart</desc>
+			<path class="st4" d="m9 792v43.46"/>
+			<rect class="st6" x="-19.263" y="807.15" width="56.527" height="19.2"/>
+			<text class="st7" x="-14.77" y="814.34998"><tspan class="st8" text-decoration="underline" style="text-decoration-line:underline">control moved</tspan> <tspan class="st9" x="-19.26" dy="1.2em">wakeup &amp; restart</tspan></text>		</g>
+	</g>
+</svg>
