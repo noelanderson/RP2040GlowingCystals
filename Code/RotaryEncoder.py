@@ -1,3 +1,7 @@
+"""
+Simple rotary encoder with pushbutton device
+Tracks pushbutton state, rotary position (modulo 255) and adjusted position (relative to given start point)
+"""
 import digitalio
 import rotaryio
 
@@ -50,4 +54,3 @@ class RotaryEncoder:
             self.buttonClicked = False
             clicked = True
         return clicked
-

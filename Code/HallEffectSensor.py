@@ -1,3 +1,7 @@
+"""
+Simple hall effect sensor device.
+Tracks if magnet & sensor are aligned
+"""
 import digitalio
 
 class HallEffectSensor:

@@ -1,4 +1,13 @@
 
+"""
+LED object based on neopixels
+Uses a sinewave to give the leds a breath-like pulsing effect
+Pulse the brightness for a given colour, or cycle though colour wheel for a rainbow effect
+
+The RP2040 has no built-in floating point support, so use a pre-calculated table for performance
+Table is power (brighness) values between 0 & 1 based on the following formula: 0.5 + (0.5 * SIN(2PI)/ (255 * arrayPos))
+Table is maxGenerations long
+"""
 import array
 from micropython import const
 import neopixel
@@ -6,11 +15,8 @@ import neopixel
 class Leds:
     WHITE = (255,255,255)
     OFF = (0, 0, 0)
-    maxGenerations = 256
-    # Use sinewave to give the leds a breath-like pulsing effect
-    # Pico has no built-in floating point support, so use a pre-calculated table for performance
-    # Table is power values between 0 & 1 base on the following formula: 0.5 + (0.5 * SIN(2PI)/ (255 * arrayPos))
-    # Table is maxGenerations long
+    maxGenerations = const(256)
+    maxPos = const(255)
     sin_table = array.array('f',[0.50,0.51,0.52,0.54,0.55,0.56,0.57,0.59,0.60,0.61,0.62,0.63,0.65,0.66,0.67,0.68,0.69,0.70,0.71,
         0.73,0.74,0.75,0.76,0.77,0.78,0.79,0.80,0.81,0.82,0.83,0.84,0.85,0.85,0.86,0.87,0.88,0.89,0.90,0.90,0.91,0.92,0.92,0.93,0.94,
         0.94,0.95,0.95,0.96,0.96,0.97,0.97,0.98,0.98,0.98,0.99,0.99,0.99,0.99,0.99,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,
@@ -25,19 +31,29 @@ class Leds:
 
     @staticmethod
     def colourWheel(pos) -> tuple[int, int, int,]:
-        if pos < 0 or pos > 255:
-            return (0, 0, 0)
-            return (0, 0, 0)
-        if pos < 85:
-            return (255 - pos * 3, pos * 3, 0)
-        if pos < 170:
-            pos -= 85
-            return (0, 255 - pos * 3, pos * 3)
-        pos -= 170
-        return (pos * 3, 0, 255 - pos * 3)
+        red = blue = green = offset = 0
+        if pos < 0 or pos > Leds.maxPos:
+            pass
+        # split wheel into 3 sectors
+        elif pos < 85:
+            offset = pos * 3
+            red = Leds.maxPos - offset
+            green = offset
+            blue = 0
+        elif pos < 170:
+            offset = (pos - 85) * 3
+            red = 0
+            green = Leds.maxPos - offset
+            blue = offset
+        else:
+            offset = (pos - 170) * 3
+            red = offset
+            green = 0
+            blue = Leds.maxPos - offset
+        return (red, green, blue)
 
     def __init__(self, pin, count):
-        self.colour = (0, 0, 0)
+        self.colour = Leds.OFF
         self.brightness = 0
         self.currentBrightnessStep = 0
         self.currentColourStep = 0
@@ -60,7 +76,7 @@ class Leds:
 
     def off(self) -> None:
         self.pixels.brightness = 0
-        self.colour = self.OFF
+        self.colour = Leds.OFF
         self.__setPixels()
 
     def colourPulse(self, colour) -> None:

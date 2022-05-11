@@ -1,6 +1,5 @@
 import alarm
 import board
-import digitalio
 import time
 from micropython import const
 
@@ -8,8 +7,14 @@ from HallEffectSensor import HallEffectSensor
 from RotaryEncoder import RotaryEncoder
 from Leds import Leds
 
-##############################################
-# State machine class
+"""
+Simple state machine class
+ Defines states
+ Keeps track of state changes
+ tick() called on every iteration of main program loop.  Sleeps for 20 milliseconds.
+  goes into low power state after 10minutes of no user activity.
+ State actions performed in main loop as an if/elif/else chain
+"""
 class SystemState:
     LOW_POWER = const(0)
     START_UP = const(1)
@@ -49,18 +54,18 @@ class SystemState:
         if newState != self.state:
             print ("state: ", SystemState.nameFromState(self.state), " -> ", SystemState.nameFromState(newState))
             self.state = newState
-            timeoutCount = 0 # Reset our timeout as we have user activity
+            self.timeoutCount = 0 # Reset our timeout as we have user activity
 
 
-##############################################
-# Set up Board (adafruit RP2040 Feather)
-#  D4    output - neopixel leds
-#  D11   input - rotary encoder A
-#  D10   input - rotary encoder B
-#  D12   input - rotary encoder switch 
-#  D24   input - moon Hall Effect sensor
-#  D25   input - sun Hall Effect sensor
-#
+"""
+Set up Board (adafruit RP2040 Feather)
+ D4    output - neopixel leds
+ D11   input - rotary encoder A
+ D10   input - rotary encoder B
+ D12   input - rotary encoder switch 
+ D24   input - moon Hall Effect sensor
+ D25   input - sun Hall Effect sensor
+"""
 if alarm.wake_alarm != None:
     if isinstance(alarm.wake_alarm, alarm.pin.PinAlarm):
         print("wake from deep sleep")
@@ -128,7 +133,7 @@ while True:
         moon.deinit()
         sun.deinit()
 
-        # reuse our inputs as alarm triggers
+        # Reuse our inputs as alarm triggers
         encoderPinAlarm = alarm.pin.PinAlarm(pin=board.D12, value=False, pull=True, edge = True)
         encoderAPinAlarm = alarm.pin.PinAlarm(pin=board.D11, value=False, pull=True, edge = True)
         encoderBPinAlarm = alarm.pin.PinAlarm(pin=board.D11, value=False, pull=True, edge = True)
