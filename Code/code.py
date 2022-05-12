@@ -12,7 +12,7 @@ Simple state machine class
  Defines states
  Keeps track of state changes
  tick() called on every iteration of main program loop.  Sleeps for 20 milliseconds.
-  goes into low power state after 10minutes of no user activity.
+  goes into low power state after 10 minutes of no user activity.
  State actions performed in main loop as an if/elif/else chain
 """
 class SystemState:
