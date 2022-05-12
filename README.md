@@ -6,7 +6,7 @@ But a small boy's "love" is not a good match for quartz, and they were starting 
 So I decided to make a little display to hold them.
 ` `  
 ` `  
-![top of box](images\top.jpg)
+![top of box](images/top.jpg)
 ` `  
 ` `  
 Then feature creep took hold, and I thought I'd laser cut a box and have some LEDs to light up the crystals.
@@ -15,18 +15,18 @@ So now the crystals sit in rotatable sections above some red-green-blue LEDs. Th
 A rotary encoder is hidden under some more laser cut pieces and allow the colours to be manually selected
 ` `  
 ` `  
-![box glowing](images\glow.jpg)
+![box glowing](images/glow.jpg)
 ` `  
 ` `  
 An Adafruit RP2040 feather board, powered by a LiPo battery, drives the device.
 Wiring isn't the neatest :) but it works
 ` `  
 ` `  
-![inside box](images\inside.jpg)
+![inside box](images/inside.jpg)
 ` `  
 ` `  
 Code is in CircuitPython (mostly as an opportunity to learn some more Python)
 ` `  
 ` `  
 ## State Machine
-![state machine diagram](images\state%20machine.svg)
+![state machine diagram](images/state%20machine.svg)
