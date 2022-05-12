@@ -1,5 +1,5 @@
 # RP2040 Glowing Crystals
-Laser cut box for my Toddlers favorite crystals with RP2040 powered LEDs to illuminate them
+Laser cut box for my toddlers favorite crystals with some RP2040 powered LEDs to illuminate them.
 
 He has a magpie's eye for shiny things and is particularly fond of two quartz crystals he found at a flea market.
 But a small boy's "love" is not a good match for quartz, and they were starting to show the wear and tear from his handling.
